@@ -191,7 +191,7 @@
 					  {
 					    number: num,
 					    numberStep: comma_separator_number_step
-					  }, 7000
+					  }, 5000
 					);
 				});
 				
