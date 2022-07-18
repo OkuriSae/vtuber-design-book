@@ -7621,7 +7621,7 @@ h1, h2, h3, h4, h5,
           z-index: -1; }
       .hero-wrap .forth .text h1 {
         font-weight: 800;
-        font-size: 90px;
+        font-size: 80px;
         color: #fff;
         line-height: 1.2; }
         @media (max-width: 991.98px) {
