@@ -7591,7 +7591,7 @@ h1, h2, h3, h4, h5,
         .hero-wrap .forth .text {
           padding-left: 3em; } }
       .hero-wrap .forth .text .desc {
-        width: 40%; }
+        width: 50%; }
         @media (max-width: 767.98px) {
           .hero-wrap .forth .text .desc {
             width: 100%; }
