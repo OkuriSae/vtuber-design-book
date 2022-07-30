@@ -281,7 +281,11 @@
 	};
 	bgVideo();
 
-
+  let headerHeight = 50;
+  let urlHash = location.hash;
+  if (urlHash) {
+    let position = $(urlHash).offset().top - headerHeight;
+    $('html, body').animate({ scrollTop: position }, 0);
+  }
 
 })(jQuery);
-

@@ -30,8 +30,10 @@ template_apply($(".template_sup_a2"), getSupportesA2());
 // 自動切換
 setInterval(function () {
   const buttons = $(".owl-dot");
-  const idx = Math.floor(Math.random() * (buttons.length-1));
-  $(".owl-dot")[idx].click();
+  if(buttons) {
+    const idx = Math.floor(Math.random() * (buttons.length-1));
+    $(".owl-dot")[idx].click();
+  }
 }, 7000);
 
 function getSupportesC2() {
