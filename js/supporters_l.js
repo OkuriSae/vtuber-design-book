@@ -1,7 +1,4 @@
 'use strict'
-/**
- * 応援メッセージLカルーセル
- */
 
 // リストシャッフル
 const shuffle = ([...array]) => {
@@ -12,17 +9,21 @@ const shuffle = ([...array]) => {
   return array;
 }
 
-// テンプレから自動生成
-const template = $(".template_l");
-for (let data of shuffle(getData())) {
+function template_apply(template, data) {
+  if (!template) { return; }
+  for (let datum of data) {
     const content = template.clone(true);
-    content.find(".img").attr("style", `background-image: url("images/supporters/${data.img}");`);
-    content.find(".name").text(data.name);
-    content.find(".link").attr("href", data.link);
-    content.find(".message").text(data.message);
-    template.after(content);
+    content.find(".img").attr("style", `background-image: url("images/supporters/${datum.img}");`);
+    content.find(".name").text(datum.name);
+    content.find(".link").attr("href", datum.link);
+    content.find(".message").text(datum.message);
+    template.before(content);
+  }
+  template.remove();
 }
-template.remove();
+
+template_apply($(".template_sup_msg_shuffle"), shuffle(getData()));
+template_apply($(".template_sup_msg"), getData());
 
 // 自動切換
 setInterval(function () {
