@@ -22,8 +22,10 @@ function template_apply(template, data) {
   template.remove();
 }
 
-template_apply($(".template_sup_msg_shuffle"), shuffle(getData()));
-template_apply($(".template_sup_msg"), getData());
+template_apply($(".template_sup_c2_shuffle"), shuffle(getSupportesC2()));
+template_apply($(".template_sup_c2"), getSupportesC2());
+template_apply($(".template_sup_c1"), getSupportesC1());
+template_apply($(".template_sup_a2"), getSupportesA2());
 
 // 自動切換
 setInterval(function () {
@@ -32,7 +34,7 @@ setInterval(function () {
   $(".owl-dot")[idx].click();
 }, 7000);
 
-function getData () {
+function getSupportesC2() {
   return [
     {
       "name": "匿名希望",
@@ -441,6 +443,580 @@ function getData () {
       "message": "これを読んでいる皆様、この素敵な本で、更なるデザインの発見や新たなクリエイター様やVTuber様との出会いを楽しんでください！発売おめでとうございます！",
       "link": "https://twitter.com/roki_oxo",
       "img": "roki_oxo.jpg"
+    }
+  ];
+}
+
+function getSupportesC1() {
+  return [
+    {
+      "name": "clea_Vtuber",
+      "link": "https://twitter.com/clea_vtuber"
+    },
+    {
+      "name": "tetsu",
+      "link": "http://otto858.com/"
+    },
+    {
+      "name": "弥勒",
+      "link": "https://youtube.com/c/Mitras"
+    },
+    {
+      "name": "Sousaka_Aoi",
+      "link": "https://twitter.com/Sousaka_Aoi"
+    },
+    {
+      "name": "sin",
+      "link": "#"
+    },
+    {
+      "name": "百合野蒼空",
+      "link": "https://twitter.com/Yurino_Sora"
+    },
+    {
+      "name": "板影くおん@Vtuber",
+      "link": "https://twitter.com/ItakageKuon"
+    },
+    {
+      "name": "天草フラン",
+      "link": "https://twitter.com/amakusa_fran"
+    },
+    {
+      "name": "糟屋もふ（かすやもふ）",
+      "link": "https://twitter.com/KasuyaMofu"
+    },
+    {
+      "name": "ヨナカ",
+      "link": "https://www.youtube.com/c/yonaka_game"
+    },
+    {
+      "name": "珈琲の人",
+      "link": "https://twitter.com/mr_coffee1003"
+    },
+    {
+      "name": "夢乃ほのか",
+      "link": "https://twitter.com/honoka_yumeno"
+    },
+    {
+      "name": "天傘ている",
+      "link": "https://twitter.com/AmagasaTale"
+    },
+    {
+      "name": "ケン/ken",
+      "link": "https://twitter.com/ken_tcmf"
+    },
+    {
+      "name": "DD Erikson",
+      "link": "https://twitter.com/AKYM21"
+    },
+    {
+      "name": "寿々華",
+      "link": "https://twitter.com/suzuka_mell"
+    },
+    {
+      "name": "伊達一弘 氏",
+      "link": "https://twitter.com/kutita_hoshi"
+    },
+    {
+      "name": "夜枕ギリー",
+      "link": "https://www.youtube.com/c/gillieyomakura"
+    },
+    {
+      "name": "ゆるっとチャンネル",
+      "link": "https://youtube.com/channel/UC4Lg-WH_7XRlZ95K_AiOtmw"
+    },
+    {
+      "name": "さしこ",
+      "link": "https://www.youtube.com/c/sasistudio/"
+    },
+    {
+      "name": "rinto.",
+      "link": "https://twitter.com/rinto__z"
+    },
+    {
+      "name": "サブクマ",
+      "link": "#"
+    },
+    {
+      "name": "LUCAS",
+      "link": "https://www.youtube.com/channel/UCvcQcNTD7FbXbnvrzcXixcA"
+    },
+    {
+      "name": "oxxPickyxxo",
+      "link": "#"
+    },
+    {
+      "name": "聞喜遊音",
+      "link": "https://youtube.com/channel/UC7HMrMA14Htl1ngK1950Yog"
+    },
+    {
+      "name": "きすちぃ",
+      "link": "https://twitter.com/Quisty"
+    },
+    {
+      "name": "アサカデザイン",
+      "link": "https://www.foriio.com/asaka44"
+    },
+    {
+      "name": "猫月遥歩（ねこづきあゆむ）",
+      "link": "https://www.nekozuki.me/"
+    },
+    {
+      "name": "izm",
+      "link": "https://github.com/neon-izm/Portfolio"
+    },
+    {
+      "name": "先行投資",
+      "link": "#"
+    },
+    {
+      "name": "Geisha",
+      "link": "https://twitter.com/takayayamamoto_"
+    },
+    {
+      "name": "柴厡和寛",
+      "link": "https://twitter.com/ShibaharaKzhr"
+    },
+    {
+      "name": "月李シンシア*",
+      "link": "https://twitter.com/TUKI_44a_cr"
+    },
+    {
+      "name": "AB",
+      "link": "#"
+    },
+    {
+      "name": "つゆみそ",
+      "link": "https://twitter.com/tuyumiso0"
+    },
+    {
+      "name": "Heizo_Gaming",
+      "link": "https://mobile.twitter.com/Heizo_Gaming"
+    },
+    {
+      "name": "みたりんこ",
+      "link": "https://twitter.com/mitaringo"
+    },
+    {
+      "name": "S_Kei",
+      "link": "#"
+    },
+    {
+      "name": "てじり",
+      "link": "https://www.youtube.com/channel/UCPeJsIz0fNwiHVBGjuoxeIw"
+    },
+    {
+      "name": "コノ",
+      "link": "https://youtube.com/channel/UCry4-UrEK3C6vP90rE9Ethg"
+    },
+    {
+      "name": "コタロー",
+      "link": "https://www.youtube.com/channel/UCP5JWvSgNw6lXDqQTpfG7lA"
+    },
+    {
+      "name": "かわみや かなえ",
+      "link": "https://youtube.com/channel/UCj4YSdu-gQasZ2culddP4bg"
+    },
+    {
+      "name": "朱銅あかね",
+      "link": "https://twitter.com/akagane_akane"
+    },
+    {
+      "name": "雨宿れいん",
+      "link": "https://youtube.com/channel/UCNZHLeBjtWAIpgh-LONoBHA"
+    },
+    {
+      "name": "hainoyume",
+      "link": "https://hainoyume.com"
+    },
+    {
+      "name": "霧島響希",
+      "link": "https://twitter.com/Kirishima_stack"
+    },
+    {
+      "name": "隠牙リツ",
+      "link": "#"
+    },
+    {
+      "name": "符守マナ",
+      "link": "https://twitter.com/Fumana_fumamori"
+    },
+    {
+      "name": "ことり ゆうい",
+      "link": "https://twitter.com/kotoriYOUI"
+    },
+    {
+      "name": "善哉ILLUST&DESIGN",
+      "link": "https://yokikana.myportfolio.com/"
+    },
+    {
+      "name": "宇宙地ゆめ",
+      "link": "https://twitter.com/src_yume"
+    },
+    {
+      "name": "あるしろ",
+      "link": "https://soundcloud.com/arushiro"
+    },
+    {
+      "name": "になきち",
+      "link": "https://twitter.com/ninagawamoon"
+    },
+    {
+      "name": "ゆれいき",
+      "link": "#"
+    },
+    {
+      "name": "maŸUko",
+      "link": "https://twitter.com/mayuko2525"
+    },
+    {
+      "name": "メカニカルごーと",
+      "link": "https://twitter.com/goat_mechanical"
+    },
+    {
+      "name": "眞宮悠里",
+      "link": "#"
+    },
+    {
+      "name": "jacky",
+      "link": "#"
+    },
+    {
+      "name": "Gomatama",
+      "link": "#"
+    },
+    {
+      "name": "ふじゅ@fuju9981",
+      "link": "https://www.youtube.com/channel/UC5B2VjU2iHes6l3Yw7G99AA"
+    },
+    {
+      "name": "やちか",
+      "link": "https://yachikach.wixsite.com/mysite"
+    },
+    {
+      "name": "怪談朗読VTuber月子",
+      "link": "https://www.youtube.com/c/tsukikochannel"
+    },
+    {
+      "name": "桃空しいな",
+      "link": "https://twitter.com/v_momosorasiina"
+    },
+    {
+      "name": "みやざわはじめ",
+      "link": "https://www.youtube.com/channel/UCFzk2zAHo4nLhjVN-ae2MSA"
+    },
+    {
+      "name": "二条あまね",
+      "link": "https://youtube.com/channel/UCNXcIXiKfqRXoQgw5H-e1GA"
+    },
+    {
+      "name": "拙者K",
+      "link": "https://twitter.com/sessha_ci4"
+    },
+    {
+      "name": "水心ととの",
+      "link": "https://twitter.com/totono_726"
+    },
+    {
+      "name": "ツミヤマ ヨム",
+      "link": "https://twitter.com/tsumiyama_yom"
+    },
+    {
+      "name": "味覚",
+      "link": "https://twitter.com/mii0102_"
+    },
+    {
+      "name": "りめろん",
+      "link": "#"
+    },
+    {
+      "name": "中岡なあか",
+      "link": "youtube.com/c/naakachan"
+    },
+    {
+      "name": "tajimang",
+      "link": "#"
+    },
+    {
+      "name": "すなふね",
+      "link": "https://twitter.com/sunafune"
+    },
+    {
+      "name": "ユエリア・ローザレット",
+      "link": "https://twitter.com/yueria_rozalet"
+    },
+    {
+      "name": "コトバ",
+      "link": "https://twitter.com/ibanezaf75bs"
+    },
+    {
+      "name": "朱城碧音",
+      "link": "https://twitter.com/Aoto_21g"
+    },
+    {
+      "name": "双葉いちか",
+      "link": "https://twitter.com/2taba1ka"
+    },
+    {
+      "name": "ロリ高ツッキー/米田凌梧",
+      "link": "https://twitter.com/tukisima081325"
+    },
+    {
+      "name": "高垣",
+      "link": "https://tmm-design.work/"
+    },
+    {
+      "name": "凪乃ましろ",
+      "link": "https://twitter.com/nagino_mashiro"
+    },
+    {
+      "name": "橘花あんり",
+      "link": "https://twitter.com/V_Anri_T"
+    },
+    {
+      "name": "城戸エリク",
+      "link": "https://twitter.com/Kido_Eric_V"
+    },
+    {
+      "name": "火ノ守鍊華",
+      "link": "https://twitter.com/hnmr_rng"
+    },
+    {
+      "name": "TDK ROTTERDAM",
+      "link": "https://twitter.com/TDK_ROTTERDAM"
+    },
+    {
+      "name": "奈々瀬ひかげ",
+      "link": "https://www.youtube.com/channel/UCu5yCEYvYDz020eKXzFCH9g"
+    },
+    {
+      "name": "柘榴石(ざくろいし)ザクロ",
+      "link": "https://mobile.twitter.com/zakuroish1"
+    },
+    {
+      "name": "鈴森やしろ",
+      "link": "https://twitter.com/suzumoriyashiro"
+    },
+    {
+      "name": "みちょこ",
+      "link": "https://twitter.com/michocolate"
+    },
+    {
+      "name": "今永さらら",
+      "link": "https://youtube.com/channel/UC1UAYydPszpYVJabWriQl1A?sub_confirmation=1"
+    },
+    {
+      "name": "けいろー",
+      "link": "https://twitter.com/K16writer"
+    },
+    {
+      "name": "雅王とらい",
+      "link": "https://m.youtube.com/c/GAOTRYChannel"
+    },
+    {
+      "name": "わんだーらすと",
+      "link": "http://www.circle-wanderlust.com"
+    },
+    {
+      "name": "星井まゆき",
+      "link": "https://hoshiim.jimdofree.com/"
+    },
+    {
+      "name": "御掬この子",
+      "link": "https://twitter.com/konoko_okome"
+    },
+    {
+      "name": "雨彗ユキ",
+      "link": "https://twitter.com/AmehokiYuki"
+    },
+    {
+      "name": "坂道のぼる",
+      "link": "https://twitter.com/noboru_skmc"
+    },
+    {
+      "name": "akky",
+      "link": "#"
+    },
+    {
+      "name": "四方木ヨモ",
+      "link": "https://youtube.com/channel/UCv4QavPkw0TiZYfBgK3ltvg"
+    }
+  ];
+}
+
+
+function getSupportesA2() {
+  return [
+    {
+      "name": "さわむらしゅんいち"
+    },
+    {
+      "name": "スコラボ"
+    },
+    {
+      "name": "mbaharip"
+    },
+    {
+      "name": "縁べりお"
+    },
+    {
+      "name": "ひつじの大家さん"
+    },
+    {
+      "name": "小福"
+    },
+    {
+      "name": "けいと。"
+    },
+    {
+      "name": "nao550"
+    },
+    {
+      "name": "音々愛メウ"
+    },
+    {
+      "name": "ミキマキ"
+    },
+    {
+      "name": "毒野モモコ"
+    },
+    {
+      "name": "夜見ベルノ"
+    },
+    {
+      "name": "藻谷スリップ"
+    },
+    {
+      "name": "海老真夜中"
+    },
+    {
+      "name": "ずんだもち"
+    },
+    {
+      "name": "龍道"
+    },
+    {
+      "name": "かがぴー"
+    },
+    {
+      "name": "天満ニア"
+    },
+    {
+      "name": "いゆに@IyuniMin"
+    },
+    {
+      "name": "シュウ"
+    },
+    {
+      "name": "한민구"
+    },
+    {
+      "name": "みゅうみゅう"
+    },
+    {
+      "name": "指折灯"
+    },
+    {
+      "name": "giw"
+    },
+    {
+      "name": "いちろー"
+    },
+    {
+      "name": "紫翠とーん"
+    },
+    {
+      "name": "うむー"
+    },
+    {
+      "name": "YOKA"
+    },
+    {
+      "name": "Nonas"
+    },
+    {
+      "name": "涼川リト"
+    },
+    {
+      "name": "いぶか"
+    },
+    {
+      "name": "逢夢つあ（あいむつあ）"
+    },
+    {
+      "name": "八ッ橋しなもん"
+    },
+    {
+      "name": "わふーお"
+    },
+    {
+      "name": "野良クリ"
+    },
+    {
+      "name": "星奈クロエ"
+    },
+    {
+      "name": "誘宵幽月"
+    },
+    {
+      "name": "白むく"
+    },
+    {
+      "name": "喜多束あずき"
+    },
+    {
+      "name": "平向名"
+    },
+    {
+      "name": "狼赫まかみ"
+    },
+    {
+      "name": "ワッカ"
+    },
+    {
+      "name": "ソニリア"
+    },
+    {
+      "name": "u_chan38"
+    },
+    {
+      "name": "Buu"
+    },
+    {
+      "name": "ケニー"
+    },
+    {
+      "name": "AL-9110"
+    },
+    {
+      "name": "深街ミドリ"
+    },
+    {
+      "name": "夢咲いちか-VTuber-"
+    },
+    {
+      "name": "しらき"
+    },
+    {
+      "name": "振音こはる"
+    },
+    {
+      "name": "pompomBGW"
+    },
+    {
+      "name": "ラヴゾンビ"
+    },
+    {
+      "name": "青兎るきな"
+    },
+    {
+      "name": "封華"
+    },
+    {
+      "name": "汐田"
+    },
+    {
+      "name": "梁葵かおる"
     }
   ];
 }
