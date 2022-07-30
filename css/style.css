@@ -8432,11 +8432,6 @@ textarea.form-control {
     padding-top: 0;
     padding-bottom: 2em;
     position: relative; }
-  .testimony-section .owl-carousel .owl-stage-outer .owl-stage {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
   .testimony-section .owl-nav {
     position: absolute;
     top: 100%;
