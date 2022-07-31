@@ -1040,36 +1040,6 @@ function getMembers() {
       "img": "hourai.png"
     },
     {
-      "name": "さだめ",
-      "role": "制作スタッフ",
-      "link": "https://twitter.com/sadameshinonome",
-      "img": "sadame.png"
-    },
-    {
-      "name": "胡桃もここ",
-      "role": "制作スタッフ",
-      "link": "https://twitter.com/kurumi_mokoko",
-      "img": "mokoko.png"
-    },
-    {
-      "name": "Sirius",
-      "role": "制作スタッフ",
-      "link": "https://twitter.com/SiriusArc7",
-      "img": "sirius.png"
-    },
-    {
-      "name": "tayama",
-      "role": "制作スタッフ",
-      "link": "https://twitter.com/tayama0324",
-      "img": "tayama.png"
-    },
-    {
-      "name": "八瀬すずか",
-      "role": "広報制作",
-      "link": "https://twitter.com/yase25suzuka",
-      "img": "suzuka.png"
-    },
-    {
       "name": "モンブラン",
       "role": "デザイナー",
       "link": "https://twitter.com/MontBlanc04",
@@ -1170,6 +1140,36 @@ function getMembers() {
       "role": "デザイナー",
       "link": "https://twitter.com/1ka_Ui_",
       "img": "ichika.png"
+    },
+    {
+      "name": "八瀬すずか",
+      "role": "広報制作",
+      "link": "https://twitter.com/yase25suzuka",
+      "img": "suzuka.png"
+    },
+    {
+      "name": "胡桃もここ",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/kurumi_mokoko",
+      "img": "mokoko.png"
+    },
+    {
+      "name": "tayama",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/tayama0324",
+      "img": "tayama.png"
+    },
+    {
+      "name": "さだめ",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/sadameshinonome",
+      "img": "sadame.png"
+    },
+    {
+      "name": "Sirius",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/SiriusArc7",
+      "img": "sirius.png"
     }
   ];
 }
