@@ -9,23 +9,25 @@ const shuffle = ([...array]) => {
   return array;
 }
 
-function template_apply(template, data) {
+function template_apply(template, data, dir) {
   if (!template) { return; }
   for (let datum of data) {
     const content = template.clone(true);
-    content.find(".img").attr("style", `background-image: url("images/supporters/${datum.img}");`);
+    content.find(".img").attr("style", `background-image: url("images/${dir}/${datum.img}");`);
     content.find(".name").text(datum.name);
     content.find(".link").attr("href", datum.link);
     content.find(".message").text(datum.message);
+    content.find(".role").text(datum.role);
     template.before(content);
   }
   template.remove();
 }
 
-template_apply($(".template_sup_c2_shuffle"), shuffle(getSupportesC2()));
-template_apply($(".template_sup_c2"), getSupportesC2());
-template_apply($(".template_sup_c1"), getSupportesC1());
-template_apply($(".template_sup_a2"), getSupportesA2());
+template_apply($(".template_sup_c2_shuffle"), shuffle(getSupportesC2()), "supporters");
+template_apply($(".template_sup_c2"), getSupportesC2(), "supporters");
+template_apply($(".template_sup_c1"), getSupportesC1(), "supporters");
+template_apply($(".template_sup_a2"), getSupportesA2(), "supporters");
+template_apply($(".template_members"), getMembers(), "members");
 
 // 自動切換
 setInterval(function () {
@@ -1019,6 +1021,155 @@ function getSupportesA2() {
     },
     {
       "name": "梁葵かおる"
+    }
+  ];
+}
+
+function getMembers() {
+  return [
+    {
+      "name": "小栗さえ",
+      "role": "著者/発行/編集",
+      "link": "https://twitter.com/OkuriSae",
+      "img": "sae.png"
+    },
+    {
+      "name": "蓬莱軒",
+      "role": "チーフデザイン",
+      "link": "https://twitter.com/HoraiChan",
+      "img": "hourai.png"
+    },
+    {
+      "name": "さだめ",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/sadameshinonome",
+      "img": "sadame.png"
+    },
+    {
+      "name": "胡桃もここ",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/kurumi_mokoko",
+      "img": "mokoko.png"
+    },
+    {
+      "name": "Sirius",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/SiriusArc7",
+      "img": "sirius.png"
+    },
+    {
+      "name": "tayama",
+      "role": "制作スタッフ",
+      "link": "https://twitter.com/tayama0324",
+      "img": "tayama.png"
+    },
+    {
+      "name": "八瀬すずか",
+      "role": "広報制作",
+      "link": "https://twitter.com/yase25suzuka",
+      "img": "suzuka.png"
+    },
+    {
+      "name": "モンブラン",
+      "role": "デザイナー",
+      "link": "https://twitter.com/MontBlanc04",
+      "img": "momb.png"
+    },
+    {
+      "name": "kentax",
+      "role": "デザイナー",
+      "link": "https://twitter.com/kentax",
+      "img": "kentax.png"
+    },
+    {
+      "name": "須賀サカキ",
+      "role": "デザイナー",
+      "link": "https://twitter.com/sukasaka_v",
+      "img": "sakaki.png"
+    },
+    {
+      "name": "きぬた博士",
+      "role": "デザイナー",
+      "link": "https://twitter.com/DrKinuta_tuber",
+      "img": "kinuta.png"
+    },
+    {
+      "name": "ごごん",
+      "role": "デザイナー",
+      "link": "https://twitter.com/gogon_illust",
+      "img": "gogon.png"
+    },
+    {
+      "name": "uo",
+      "role": "デザイナー",
+      "link": "https://twitter.com/pukapuka_o",
+      "img": "uo.png"
+    },
+    {
+      "name": "唐揚丸",
+      "role": "デザイナー",
+      "link": "https://twitter.com/karaagemaru0002",
+      "img": "karaage.png"
+    },
+    {
+      "name": "清涼院ラムネ",
+      "role": "デザイナー",
+      "link": "https://twitter.com/seiryoin_ramune",
+      "img": "ramune.png"
+    },
+    {
+      "name": "9egg9",
+      "role": "デザイナー",
+      "link": "https://twitter.com/9egg9",
+      "img": "9egg9.png"
+    },
+    {
+      "name": "OKUMONO",
+      "role": "デザイナー",
+      "link": "https://twitter.com/okumono1",
+      "img": "okumono.png"
+    },
+    {
+      "name": "あやの紫苑",
+      "role": "デザイナー",
+      "link": "https://twitter.com/ayanosion",
+      "img": "ayano.png"
+    },
+    {
+      "name": "うさねこメモリー",
+      "role": "デザイナー",
+      "link": "https://twitter.com/usanekomemory",
+      "img": "usaneko.png"
+    },
+    {
+      "name": "かに",
+      "role": "デザイナー",
+      "link": "https://twitter.com/wekapico",
+      "img": "kani.png"
+    },
+    {
+      "name": "めりぃぱめりぃ",
+      "role": "デザイナー",
+      "link": "https://twitter.com/merrypamerry",
+      "img": "mery.png"
+    },
+    {
+      "name": "九埜",
+      "role": "デザイナー",
+      "link": "https://twitter.com/kuno_to_yomu",
+      "img": "kuno.png"
+    },
+    {
+      "name": "素材屋あいりす",
+      "role": "デザイナー",
+      "link": "https://twitter.com/sozaiyairis",
+      "img": "iris.png"
+    },
+    {
+      "name": "苺花ゆい",
+      "role": "デザイナー",
+      "link": "https://twitter.com/1ka_Ui_",
+      "img": "ichika.png"
     }
   ];
 }
