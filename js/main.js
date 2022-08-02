@@ -278,6 +278,10 @@
 
   var bgVideo = function() {
 		$('.player').mb_YTPlayer();
+		let filters = {
+			brightness: 70
+		}
+		jQuery('.player').YTPApplyFilters(filters)
 	};
 	bgVideo();
 
