@@ -274,8 +274,6 @@
     fixedContentPos: false
   });
 
-
-
   var bgVideo = function() {
 		$('.player').mb_YTPlayer();
 		let filters = {
