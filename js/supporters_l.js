@@ -1138,7 +1138,7 @@ function getMembers() {
     {
       "name": "苺花ゆい",
       "role": "デザイナー",
-      "link": "https://twitter.com/1ka_Ui_",
+      "link": "https://twitter.com/1kaUi___",
       "img": "ichika.png"
     },
     {
