@@ -8180,6 +8180,15 @@ h1, h2, h3, h4, h5,
   position: relative;
   display: block; }
 
+.block-ideas {
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 240px;
+  position: relative;
+  display: block; }
+
 @media (min-width: 768px) {
   .blog-entry {
     margin-bottom: 30px; } }
