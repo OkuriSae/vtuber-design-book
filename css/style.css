@@ -7630,6 +7630,11 @@ h1, h2, h3, h4, h5,
         @media (max-width: 991.98px) {
           .hero-wrap .forth .text h1 {
             font-size: 50px; } }
+      .hero-wrap .forth .text h1 span {
+	    position: relative;
+	    margin: 0 -0.1ex 0.2ex 0;
+	    padding: 0 0.2ex 0 0;
+        background-color: #000; }
       .hero-wrap .forth .text h2 {
         font-size: 28px;
         font-weight: 600;
@@ -7719,6 +7724,14 @@ h1, h2, h3, h4, h5,
 
 .video-hero {
   height: 750px; }
+  .video-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../images/bg_screen.png) repeat 0 0 / 3px; }
 
 .owl-carousel {
   position: relative; }
@@ -8001,7 +8014,8 @@ h1, h2, h3, h4, h5,
 
 .project {
   width: 100%;
-  height: 300px;
+  height: auto;
+  aspect-ratio: 1.414 / 1;
   margin-bottom: 30px;
   position: relative;
   z-index: 0; }
