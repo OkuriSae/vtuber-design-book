@@ -62,6 +62,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  overflow-x: hidden;
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
@@ -7298,6 +7299,16 @@ body {
     height: 100%;
     width: 100%; }
 
+body::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 103px;
+  background-color: #000; }
+  @media (max-width: 991.98px) {
+  	body::before {
+	  height: 46px } }
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -7319,13 +7330,15 @@ h1, h2, h3, h4, h5,
   color: #55ace0 !important; }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: #fff !important;
   z-index: 3;
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #000000 !important;
-      position: relative;
       padding: 0 10px; }
       .ftco-navbar-light .navbar-brand {
         font-size: 20px; } }
@@ -7479,8 +7492,7 @@ h1, h2, h3, h4, h5,
     margin-top: -130px;
     background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 0; }
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     @media (min-width: 992px) {
       .ftco-navbar-light.scrolled .nav-item .nav-link:after {
         bottom: 19px !important; } }
@@ -7557,12 +7569,18 @@ h1, h2, h3, h4, h5,
   position: relative;
   height: 750px;
   background: #000000; }
+    @media (max-width: 767.98px) {
+      .hero-wrap {
+        min-height: 540px;
+        height: 90vh; } }
   .hero-wrap .forth {
     width: 20%;
     height: 750px; }
     @media (max-width: 767.98px) {
       .hero-wrap .forth {
-        width: 0%; } }
+	  	width: 0%;
+        min-height: 540px;
+        height: 90vh; } }
     .hero-wrap .forth .bg-after {
       position: relative;
       width: 100%;
@@ -7611,34 +7629,36 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         margin-bottom: 10px;
         position: relative;
+		text-decoration: underline;
+		text-decoration-thickness: 8px;
+		text-decoration-color: #55ace0;
         z-index: 0; }
-        .hero-wrap .forth .text .subheading:after {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 10px;
-          width: 100%;
-          content: '';
-          background: #55ace0;
-          z-index: -1; }
       .hero-wrap .forth .text h1 {
         font-weight: 800;
         font-size: 80px;
         color: #fff;
         line-height: 1.2; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 1280.98px) {
           .hero-wrap .forth .text h1 {
-            font-size: 50px; } }
+            font-size: 64px; } }
+        @media (max-width: 767.98px) {
+          .hero-wrap .forth .text h1 {
+            font-size: 44px; } }
       .hero-wrap .forth .text h1 span {
 	    position: relative;
-	    margin: 0 -0.1ex 0.2ex 0;
+	    margin: 0 -0.2ex 0.2ex 0;
 	    padding: 0 0.2ex 0 0;
         background-color: #000; }
+        @media (max-width: 767.98px) {
+          .hero-wrap .forth .text h1 span {
+		    text-indent: 0.2ex; } }
       .hero-wrap .forth .text h2 {
         font-size: 28px;
         font-weight: 600;
         color: #fff; }
+        @media (max-width: 767.98px) {
+          .hero-wrap .forth .text h2 {
+            font-size: 20px; } }
       .hero-wrap .forth .text .btn-custom {
         position: relative;
         border: none;
@@ -7732,6 +7752,20 @@ h1, h2, h3, h4, h5,
 	bottom: 0;
 	left: 0;
 	background: url(../images/bg_screen.png) repeat 0 0 / 3px; }
+    @media (max-width: 767.98px) {
+      .video-hero {
+        position: absolute;
+        left: 50%;
+		margin-left: 50vw;
+        transform: translateX(-50%);
+        min-width: 960px !important;
+        width: 160vh;
+        min-height: 540px !important;
+        height: 90vh !important; }
+	  .video-hero iframe {
+      	width: 100% !important;
+        height: 100% !important;
+      	} }
 
 .owl-carousel {
   position: relative; }
