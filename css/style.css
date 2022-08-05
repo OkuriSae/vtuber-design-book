@@ -9052,4 +9052,59 @@ textarea.form-control {
 		line-height: 1.2em !important;
 	}
 
+	#credit .container {
+		padding: 0;
+	}
+
+	#credit .list {
+		width: 100%;
+		padding-top: 46px;
+		margin: 0;
+	}
+
+	#credit .row {
+		margin: 0;
+	}
+
+	#credit .table {
+		position: relative;
+		font-size: 11px;
+		line-height: 1.3em;
+	}
+
+	#credit .table thead {
+		position: sticky;
+		top: 46px;
+		left: 0;
+		font-size: 10px;
+		background-color: #fff;
+		border-bottom: 1px solid #ddd;
+	}
+
+	#credit .table thead th {
+		position: relative;
+		border-left: 1px solid #ddd;
+		font-weight: normal;
+	}
+
+		#credit .table thead th:not(:first-of-type)::after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			bottom: 6px;
+			left: 0;
+			width: 1px;
+			background-color: #ddd;
+		}
+	
+		#credit .table thead th.owner {
+			width: 30%;
+		}
+
+	#credit .table th,
+	#credit .table td {
+		padding: 0.3rem;
+		letter-spacing: -0.1ex;
+	}
+
 }
