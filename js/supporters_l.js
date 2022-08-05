@@ -28,6 +28,8 @@ template_apply($(".template_sup_c2"), getSupportesC2(), "supporters");
 template_apply($(".template_sup_c1"), getSupportesC1(), "supporters");
 template_apply($(".template_sup_a2"), getSupportesA2(), "supporters");
 template_apply($(".template_members"), getMembers(), "members");
+template_apply($(".template_stock_creators"), getStockCreators(), "members");
+
 
 // 自動切換
 setInterval(function () {
@@ -1170,6 +1172,77 @@ function getMembers() {
       "role": "制作スタッフ",
       "link": "https://twitter.com/SiriusArc7",
       "img": "sirius.png"
+    }
+  ];
+}
+
+function getStockCreators() {
+  return [
+    {
+      "name": "唐揚丸",
+      "role": "デザイナー",
+      "link": "https://twitter.com/karaagemaru0002",
+      "img": "karaage.png"
+    },
+    {
+      "name": "kentax",
+      "role": "デザイナー",
+      "link": "https://twitter.com/kentax",
+      "img": "kentax.png"
+    },
+    {
+      "name": "清涼院ラムネ",
+      "role": "デザイナー",
+      "link": "https://twitter.com/seiryoin_ramune",
+      "img": "ramune.png"
+    },
+    {
+      "name": "OKUMONO",
+      "role": "デザイナー",
+      "link": "https://twitter.com/okumono1",
+      "img": "okumono.png"
+    },
+    {
+      "name": "うさねこメモリー",
+      "role": "デザイナー",
+      "link": "https://twitter.com/usanekomemory",
+      "img": "usaneko.png"
+    },
+    {
+      "name": "めりぃぱめりぃ",
+      "role": "デザイナー",
+      "link": "https://twitter.com/merrypamerry",
+      "img": "mery.png"
+    },
+    {
+      "name": "九埜",
+      "role": "デザイナー",
+      "link": "https://twitter.com/kuno_to_yomu",
+      "img": "kuno.png"
+    },
+    {
+      "name": "あやの紫苑",
+      "role": "デザイナー",
+      "link": "https://twitter.com/ayanosion",
+      "img": "ayano.png"
+    },
+    {
+      "name": "素材屋あいりす",
+      "role": "デザイナー",
+      "link": "https://twitter.com/sozaiyairis",
+      "img": "iris.png"
+    },
+    {
+      "name": "苺花ゆい",
+      "role": "デザイナー",
+      "link": "https://twitter.com/1kaUi___",
+      "img": "ichika.png"
+    },
+    {
+      "name": "9egg9",
+      "role": "デザイナー",
+      "link": "https://twitter.com/9egg9",
+      "img": "9egg9.png"
     }
   ];
 }
