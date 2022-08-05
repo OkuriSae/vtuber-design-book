@@ -7,14 +7,17 @@
 
 	"use strict";
 
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+	const ua = navigator.userAgent
+	if (!/iPhone|iPod/.test(ua)){
+		$(window).stellar({
+    		responsive: true,
+    		parallaxBackgrounds: true,
+    		parallaxElements: true,
+    		horizontalScrolling: false,
+    		hideDistantElements: false,
+    		scrollProperty: 'scroll'
+		});
+	}
 
 
 	var fullHeight = function() {
