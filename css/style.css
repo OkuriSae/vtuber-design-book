@@ -3268,6 +3268,7 @@ input[type="button"].btn-block {
     justify-content: space-between; }
 
 .navbar-brand {
+  font-family: "Poppins", 'M PLUS 1', Arial, sans-serif;
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
