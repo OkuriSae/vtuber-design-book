@@ -7970,6 +7970,8 @@ h1, h2, h3, h4, h5,
   @media (max-width: 767.98px) {
     .img-2 {
       height: 300px;
+	  border-radius: 5px;
+      margin-top: 15px;
       margin-bottom: 40px; } }
   .img-2 .icon {
     width: 100px;
@@ -8055,7 +8057,7 @@ h1, h2, h3, h4, h5,
 .project {
   width: 100%;
   height: auto;
-  aspect-ratio: 1.414 / 1;
+  aspect-ratio: 3 / 2;
   margin-bottom: 30px;
   position: relative;
   z-index: 0; }
@@ -8156,32 +8158,6 @@ h1, h2, h3, h4, h5,
   .staff .ftco-social li {
     display: inline-block; }
 
-.stock-creators {
-  margin-bottom: 60px; }
-  .stock-creators .img {
-    width: 120px;
-    height: 120px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-    margin: 0 auto; }
-  .stock-creators .text {
-    padding: 0 10px; }
-    .stock-creators .text h3 {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 0; }
-    .stock-creators .text .position {
-      color: #55ace0;
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 500; }
-  .stock-creators .ftco-social li {
-    display: inline-block; }
-
 .block-7 {
   margin-bottom: 30px;
   padding: 30px;
@@ -8242,16 +8218,8 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 200px;
-  position: relative;
-  display: block; }
-
-.block-ideas{
-  overflow: hidden;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 240px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   position: relative;
   display: block; }
 
@@ -9032,23 +9000,62 @@ textarea.form-control {
 
 
 
+
+
+#samples img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+#ideas .block-ideas {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	aspect-ratio: 1.414 / 1;
+}
+
+#stocks .img {
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+
 @media (max-width: 767.98px) {
 
-	#sponsor .about-author {
+	body.home .testimony-top {
+		padding: 0 !important;
+	}
+
+	body.home .owl-carousel .testimony-wrap {
+		padding: 0.75rem !important;
+	}
+
+	body.home .owl-carousel .testimony-wrap p.message {
+		text-align: left;
+		font-size: 13px;
+	}
+
+	.block-20 {
+		margin-bottom: 8px;
+	}
+
+	#samples .about-author {
 		flex-flow: column;
 	}
 
-	#sponsor .about-author:nth-of-type(odd) {
+	#samples .about-author:nth-of-type(odd) {
 		flex-direction: column-reverse;
 	}
 
-	#sponsor .about-author .img-fluid {
+	#samples .about-author .img-fluid {
 		max-width: 100% !important;
 		margin-bottom: 1rem;
 	}
 
-	#sponsor .about-author > div {
+	#samples .about-author > div {
 		margin: 0 !important;
+	}
+
+	#stocks .col-6 {
+		margin-bottom: 2rem !important;
 	}
 
 	#reserved .container-fluid,
@@ -9076,32 +9083,6 @@ textarea.form-control {
 	}
 
 	#sup-c1 .staff a.link {
-		display: flex !important;
-		align-items: center;
-		justify-content: center;
-		white-space: break-spaces !important;
-		height: 4rem !important;
-		padding: 0 0.5rem !important;
-		margin: 0 !important;
-		font-size: 15px !important;
-		line-height: 1.2em !important;
-	}
-  
-	#reserved .stock-creators .text {
-		padding: 0 !important;
-	}
-
-	#reserved .stock-creators .text h3 {
-		font-size: 16px !important;
-		line-height: 1.2em !important;
-	}
-
-	#reserved .stock-creators,
-	#sup-c1 .stock-creators {
-		margin-bottom: 32px !important;
-	}
-
-	#sup-c1 .stock-creators a.link {
 		display: flex !important;
 		align-items: center;
 		justify-content: center;
@@ -9158,14 +9139,24 @@ textarea.form-control {
 			background-color: #ddd;
 		}
 	
-		#credit .table thead th.owner {
-			width: 30%;
+		#credit .table thead th.subject,
+		#credit .table thead th.content {
+			min-width: 5em;
+		}
+	
+		#credit .table thead th.owner,
+		#credit .table thead th.creator {
+			width: 8em;
 		}
 
 	#credit .table th,
 	#credit .table td {
 		padding: 0.3rem;
 		letter-spacing: -0.1ex;
+	}
+
+	#credit p {
+		font-size: 12px;
 	}
 
 }

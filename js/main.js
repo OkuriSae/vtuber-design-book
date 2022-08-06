@@ -66,11 +66,13 @@
 	      }
 	    }
 		});
+
+		const carouselMargin = $(window).width() >= 768 ? 30 : 10;
 		$('.carousel-testimony').owlCarousel({
 			center: false,
 			loop: true,
 			items:1,
-			margin: 30,
+			margin: carouselMargin,
 			stagePadding: 0,
 			nav: false,
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
