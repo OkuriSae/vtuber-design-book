@@ -641,7 +641,7 @@ function getSupportesC1() {
     },
     {
       "name": "隠牙リツ",
-      "link": "#"
+      "link": "https://twitter.com/Causality_Ritsu"
     },
     {
       "name": "符守マナ",
