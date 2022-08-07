@@ -737,7 +737,7 @@ function getSupportesC1() {
     },
     {
       "name": "中岡なあか",
-      "link": "youtube.com/c/naakachan"
+      "link": "https://www.youtube.com/c/naakachan"
     },
     {
       "name": "tajimang",
