@@ -632,8 +632,8 @@ function getSupportesC1() {
       "link": "https://youtube.com/channel/UCNZHLeBjtWAIpgh-LONoBHA"
     },
     {
-      "name": "hainoyume",
-      "link": "https://hainoyume.com"
+      "name": "湊",
+      "link": "https://twitter.com/ngtmnt"
     },
     {
       "name": "霧島響希",
